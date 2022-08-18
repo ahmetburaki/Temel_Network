@@ -1,13 +1,15 @@
 <h1 align="center">Temel Network (Ağ) Notları</h1>
 <p>&nbsp;</p><p>&nbsp;</p>
-## Network (Ağ) Nedir?
+
+### Network (Ağ) Nedir?
 
 Network kısaca iki veya daha fazla cihazın belirli kurallar (protokoller) içerisinde ilerişim kurabilen cihazların oluşturmuş olduğu genel yapıdır. 
 <p>&nbsp;</p><p>&nbsp;</p>
+
 ## Domain, Hosting, SubDomain, Name Server 
 
 ### Domain
-Domain, kısaca tanımı alan adıdır. Her website aslında bir IP adresine sahiptir ancak bunları girmek yerine daha kişiselleştirilmiş ve özelleştirilmiş olan domain adlarını alırlar. Örnek vermek gerekirse "yildizskylab.com" bu bir domaindir. 
+Domain, kısaca tanımı alan adıdır. Her website aslında bir IP adresine sahiptir ancak bunları girmek yerine daha kişiselleştirilmiş ve özelleştirilmiş olan domain adlarını alırlar. Örnek vermek gerekirse [yildizskylab.com](yildizskylab.com "yildizskylab.com") bu bir domaindir. 
 
 ### SubDomain
 SubDomain, herhangi bir alan adının bir alt alan adı olarak geçmektedir, bir alan adının altına istediğiniz kadar subdomain açabilmeniz mümkündür. Örnek vermek gerelirse "skysec.yildizskylab.com" adresinde bulunan "skysec" ibaresi bir SubDomain'dir.
@@ -224,6 +226,7 @@ L-4 Application Layer (Uygulama Katmanı)
 
 #### TCP/IP Katmalnalrının Özellikleri: 
 **L-1 Network Interface Layer (Ağ Arayüzü Katmanı):**
+<br>
 Network Interface Layer'da verinin kablo üzerinde alacağı yapıyı tanımlayarak bir ve sıfırların fiziksel olarak görüntülenmesi sağlanır. Ethernet, Network Interface Layer kullanılan ve iletiminin fiziksel görünümünü sağlayan en yaygın kablolu yerel ağ teknolojisidir.
 
 * Ethernet üç alt katmana sahiptir:
@@ -234,13 +237,16 @@ Network Interface Layer'da verinin kablo üzerinde alacağı yapıyı tanımlaya
     * LLC alt katmanında, Internet Layer'ındaki frame’in hangi protokolle geldiğini belirleyerek, iletimin  MAC’e geçişini sağlar. MAC alt katmanında, hedef ve kaynak mac adresleri eklenir. LLC ve MAC, datagrama kendi başlıklarını ekleyerek tam frame yapısını oluştururlar. Fiziksel alt katman ise bu frame'i elektrik sinyaline(kablolu ağda) ya da elektromanyetik dalgalara(kablosuz ağda) dönüştürür.
 
 **L-2 Internet Layer (İnternet Katmanı):**
+<br>
 Internet Layer'da hedef ve/veya kaynak IP Adresleri veriye eklenerek verinin hangi bilgisayara gönderileceği belirlenir; gönderilen paket Datagram* halini alır. "IP", "ICMP", "IGMP", "ARP" protokolleri bu katmanda çalışmaktadır.
 
 **L-3 Transport Layer (Taşıma Katmanı)**
+<br>
 Trasnport Layer'da verinin ne şekilde gönderildiğini gösterir. TCP  (Transmission Control Protocol) ve UDP (User Datagram Protocol) protokolleri bu katmanda çalışır. 
 TCP ve UDP iletim sırasında veriye içinde bazı kontrol bilgilerinin bulunduğu bir başlık (header) ekler. TCP, kayıpsız veri gönderimi sağlayabilmek için kullanılan protokoldür. Gönderilen veriler için özel bir TCP kabul paketi (TCP ACK) gönderilir ve gelmiş olan paketlerin doğruluğu kontrol edilir. Gönderen taraf, kabul gelmediği sürece pakedi tekrar gönderir, böylece gönderim sağlanmış olur. TCP’de veri iletimi için iki bilgisayar arasında Three-Way Handshake (Üç Zamanlı El Sıkışma) bağlantısı kurulur. 
 
 **L-4 Application Layer (Uygulama Katmanı):**
+<br>
 Application Layer'da veriyi göndermek isteyen uygulama ve kullandığı dosya biçimi bulunarak gönderilen verinin  türüne göre  farklı protokoller çalıştırılır (HTTP,  SMTP, FTP, Telnet, vs.); programlarla transport protokollerinin portlar aracılığıyla haberleşmesi sağlanır. Bu portlar numaralandırılmış (HTTP:80, FTP:21 vb.) standart uygulamalardır ve transport layer'a gelen paket içeriğinin türünün anlaşılmasında rol oynar.
 
 
@@ -287,7 +293,9 @@ Cihazlar internete bağlanmak için Public bir IP adresine ihtiyaç duyarlar fak
 
 Tebrikler! Eğer bütün yazıyı okuduysan artık temel olarak 
 
-Sorularınız olursa benimle iletişime geçmekten çekinmeyiniz; iletişim adreslerim:
+Sorularınız olursa benimle iletişime geçmekten çekinmeyiniz.
+
+### İletişim adreslerim:
 
 [Mail'den İletişim için Tıklayınız](mailto:ahmetimalf2@gmail.com)
 <br>
