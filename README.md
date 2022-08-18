@@ -291,7 +291,7 @@ Cihazlar internete bağlanmak için Public bir IP adresine ihtiyaç duyarlar fak
 
 <br>
 
-Tebrikler! Eğer bütün yazıyı okuduysan artık temel olarak 
+Tebrikler! Eğer bütün yazıyı okuduysan artık temel network bilginiz bulunuyor. 
 
 Sorularınız olursa benimle iletişime geçmekten çekinmeyiniz.
 
