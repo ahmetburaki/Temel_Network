@@ -240,7 +240,7 @@ Network Interface Layer'da verinin kablo üzerinde alacağı yapıyı tanımlaya
 <br>
 Internet Layer'da hedef ve/veya kaynak IP Adresleri veriye eklenerek verinin hangi bilgisayara gönderileceği belirlenir; gönderilen paket Datagram* halini alır. "IP", "ICMP", "IGMP", "ARP" protokolleri bu katmanda çalışmaktadır.
 
-**L-3 Transport Layer (Taşıma Katmanı)**
+**L-3 Transport Layer (Taşıma Katmanı):**
 <br>
 Trasnport Layer'da verinin ne şekilde gönderildiğini gösterir. TCP  (Transmission Control Protocol) ve UDP (User Datagram Protocol) protokolleri bu katmanda çalışır. 
 TCP ve UDP iletim sırasında veriye içinde bazı kontrol bilgilerinin bulunduğu bir başlık (header) ekler. TCP, kayıpsız veri gönderimi sağlayabilmek için kullanılan protokoldür. Gönderilen veriler için özel bir TCP kabul paketi (TCP ACK) gönderilir ve gelmiş olan paketlerin doğruluğu kontrol edilir. Gönderen taraf, kabul gelmediği sürece pakedi tekrar gönderir, böylece gönderim sağlanmış olur. TCP’de veri iletimi için iki bilgisayar arasında Three-Way Handshake (Üç Zamanlı El Sıkışma) bağlantısı kurulur. 
