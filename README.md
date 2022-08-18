@@ -31,6 +31,7 @@ NS (name server), bilgisayarlar tarafından kendisine yapılan domain adresi sor
 Name Server adresi örneği:
 
 ns1.yildizskylab.com
+<br>
 ns2.yildizskylab.com
 
 <p>&nbsp;</p><p>&nbsp;</p>
@@ -105,6 +106,8 @@ Dünya üzerinde sadece 13 adet **ROOT DNS** vardır, bu ana DNS tüm trafiği k
 
 #### DNS'in Nasıl Çalışır? 
 
+![DNS_Nasil](https://github.com/ahmetburaki/Temel_Network/blob/main/img/DNS_Nasil_Calisir.png)
+
 Bu işlemi bir örnek ile anlatmak gerekirse, bir telefon numaralarını hafızamızda tutamadığımız için telefon rehberimize o numaraya ait bir isim tanımlamaya benzer. Telefon rehberi 'tarayıcı', kayıtlı isimler 'domain', telefon numarasını 'IP Adresi', bu telefon numarası ile size ulaşılmasını sağlayan operatöre 'DNS', o numaranın kullanıldığı cihaza 'Hosting', sim karta da 'NameServer Adresi' olarak varsayabiliriz.
 
 Bu sistem sayesinde tarayıcıya 'domain' bilgisi girilir, o 'domain' barındırıldığı 'hostinge' ait bir 'nameserver' bilgileri üzerinden websitesine erişim sağlar. 
@@ -116,6 +119,8 @@ Adresleri sınıflayarak bağlı bulundukları 'nameserverları' kayıt altında
 
 ### OSI Referans Modeli
 
+![OSI](https://github.com/ahmetburaki/Temel_Network/blob/main/img/OSI.png)
+
 OSI (Open Systems Interconnection) modelini ISO (International Organization for Standardization) geliştirmiştir. Amacı cihazların birbirleri ile nasıl iletişim kuracaklarını tanımlamaktır; 7 Katmandan oluşmaktadır. 
 Bunlar:
 L-1 Physical(Fiber, Wirelees vb..), 
@@ -126,6 +131,8 @@ L-5 Session(API,Sockets),
 L-6 Presentation(SSL,SSH,FTP vb.),
 L-7 Application(HTTP, FTP, IRC, DNS, SSH)
 
+![OSI_Layers](https://github.com/ahmetburaki/Temel_Network/blob/main/img/OSI-GIF.gif)
+
 #### OSI Referans Modeli Katmalnalrının Özellikleri: 
 
 L-1 Physical Layer:
@@ -135,7 +142,11 @@ Fiziksel katman veri bitlerinin alıcıya kullanılan medya ile (kablo, fiber op
 
 L-2 Data Link Layer:
 
-*Tabspace* Veri bağlantısı katmanı iki alt bölüme ayrılır: 
+
+
+[DataLink](https://github.com/ahmetburaki/Temel_Network/blob/main/img/DataLink.png)
+
+*Tabspace* Data Link Layer iki alt bölüme ayrılır: 
 *Tabspace**Tabspace* Media Access Control (MAC) 
 *Tabspace**Tabspace* Logical Link Control (LLC)
 
@@ -195,6 +206,8 @@ Uygulama katmanı ağ servisini kullanacak olan programdır. Bu katman kullanıc
 <br>
 
 ### TCP/IP Modeli
+
+![TCP/IP](https://github.com/ahmetburaki/Temel_Network/blob/main/img/TCP-IP.png)
 
 TCP/IP'de yollanan veriler katmanlara göre paketlenir ve kollanır, alıcıya ulaşınca bu paketleri tek tek açılıp veriler ulaştırılır. Her katmanda verinin türüne göre belirli protokoller görev yapmaktadıe. OSI referans modelindeki 7 katmana karşılık TCP/IP’de 4 katman mevcuttur; Application (Uygulama), Transport (Taşıma), Internet, Network Interface (Ağ Arayüzü). 
 
